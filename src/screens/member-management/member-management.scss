@@ -1,0 +1,17 @@
+.member-management {
+  float: left;
+  position: relative;
+  width: 100%;
+
+  .card {
+    flex-direction: column;
+  }
+}
+
+.member-table{
+  th, td{
+    min-width: 120px;
+    width: 120px;
+    line-height: normal;
+  }
+}

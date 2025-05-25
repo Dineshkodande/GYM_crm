@@ -1,0 +1,272 @@
+@import "./bootstrap-icons.css";
+@import "./bootstrap-theme.css";
+@import "./bootstrap-theme.min.css";
+@import "./bootstrap.css";
+@import "./common.scss";
+@import "./mui.scss";
+@import "./custom.css";
+@import "./font-awesome.css";
+@import "./animate.min.css";
+
+.logo-content {
+  padding: 20px;
+  background: var(--main-background);
+  border-top-right-radius: 15px;
+
+  .logo {
+    width: 177px;
+    height: 30px;
+    float: left;
+  }
+}
+
+.logo-toggle {
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+
+  .menu-icon {
+    top: 15px;
+  }
+}
+
+
+
+
+.header-content {
+  width:calc(100% - 230px);
+  float: left;
+  margin-left: 230px;
+  padding: 10px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.icon-list{width: 24px !important;}
+.panel-title>a:before {
+  float: right !important;
+  font-family: FontAwesome;
+  content: "\f068";
+  padding-right: 5px;
+}
+
+.panel-title>a.collapsed:before {
+  float: right !important;
+  content: "\f067";
+}
+
+.panel-title>a:hover,
+.panel-title>a:active,
+.panel-title>a:focus {
+  text-decoration: none;
+}
+
+.bottom-menus {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 230px;
+  height: auto !important;
+
+  li a {
+    float: left;
+    width: 100%;
+    text-decoration: none;
+  }
+}
+.flex-column
+{
+  flex-direction: column;
+  align-items: center;
+}
+.align-start {
+  display: flex;
+  align-items: start;
+}
+
+.align-center {
+  display: flex !important;
+  align-items: center;
+}
+
+.align-end {
+  display: flex;
+  align-items: end;
+}
+
+.place-center {
+  display: flex;
+  place-content: center;
+}
+
+.start-end {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.breadcrumb {
+  margin: 0;
+  font-size: 14px;
+
+  .breadcrumb-item a {
+    color: #888;
+    text-decoration: none;
+  }
+
+  .breadcrumb-item.active {
+    color: var(--grey-color);
+  }
+}
+
+.wrapper {
+  width: calc(100% - 230px);
+  float: left;
+  margin-left: 230px;
+  padding: 60px 40px 15px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-fwm {
+  width: calc(100% - 250px);
+  width: calc(100% - 0px);
+  margin-left: 0;
+  transition: all 0.3s ease-out;
+}
+
+.body-fwh .wrapper-feed-fwh {
+  width: calc(100% - 230px);
+  margin-left: 230px;
+}
+
+.search-box {
+  border-left: 0;
+  border-right:0 ;
+}
+.microphone{
+  cursor: pointer;
+  display: flex;
+    align-items: center;
+    margin: 0;
+    background: #fff;
+    float: left;
+    padding: 0 10px;
+    border: 1px solid #ced4da;
+    margin-left: -1px;
+    position: relative;
+    border-left: 0;
+}
+.list {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.space-lg-bottom {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1024px) and (max-width: 1250px) {
+  .dn-col-100 {
+    width: 100%;
+  }
+
+  .grid-port .appointments-overview,
+  .grid-port .pi-content {
+    .dn-col-100 {
+      width: 50%;
+    }
+  }
+
+  .grid-port .main-dashboard {
+    .dn-col-100 {
+      width: 33.33333333%;
+    }
+  }
+
+  .grid-port .main-dashboard {
+    .dn-col-66 {
+      width: 66.6666%;
+    }
+  }
+  .grid-port .dn-mpo-75{width: 75%;}
+  .grid-port .dn-mpo-25{width: 25%;}
+
+  .dn-col-50 {
+    width: 50%;
+  }
+
+  .space-lg-bottom {
+    margin-bottom: 15px;
+  }
+
+  .list {
+    display: block;
+
+    .list-item {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: 1251px) and (max-width: 1300px) {
+  .dn-col-100 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1150px) {
+  .list {
+    display: block;
+
+    .list-item {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1150px) {
+  .dn-lg-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .md-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.menu-btn{background: transparent;margin: 0 5px; display: none;   border: 0;
+  color: #fff;}
+  .menu-btn:hover{
+   color: #ffee1c;
+  }
+@media (min-width: 320px) and (max-width: 640px) {
+  .menu-btn{display: block;}
+.nav-bar{
+  left: -230px !important;
+}
+.toggle-sidebar {
+  left: 0px !important;
+  transition: all .3s ease-out;
+}
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+}

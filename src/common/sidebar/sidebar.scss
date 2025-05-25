@@ -1,0 +1,121 @@
+.nav-bar-menus {
+  background:#f2f2f2;
+  border-radius: 0px;
+  padding: 0;
+  margin: 0;
+  width: 230px;
+  height: 100%;
+  list-style-type: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0px;
+  transition: all .3s ease-out;
+  left: 0;
+}
+
+.nav-bar {
+  border-radius: 0px;
+  box-shadow: 0 1px 4px 1px #425ce51a;
+  padding: 0;
+  margin: 0;
+  width: 230px;
+  top: 50px;
+  left: 0;
+  background: var(--main-eader);
+  height: calc(100vh - 50px);
+  position: fixed;
+  z-index: 999;
+  list-style-type: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: all .3s ease-out;
+
+  ul {
+    padding: 15px 0 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: auto;
+    list-style-type: none;
+
+    .fa-arrow {
+      width: 16px;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+    }
+
+    li {
+      float: left;
+      width: 100%;
+      text-decoration: none;
+
+      a {
+        color: #212121 !important;
+        padding: 10px 10px;
+        float: left;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: normal;
+        position: relative;
+
+        svg {
+          width: 18px;
+        }
+      }
+
+      .label-menus {
+        padding-left: 10px;
+        white-space: nowrap;
+      }
+
+      .active {
+        background: var(--dark-color-yellow);
+        border-radius: 6px;
+        color: var(--secondary-color) !important;
+        text-decoration: none;
+
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+
+  .sub-menus {
+    float: left;
+    width: 95%;
+    margin-top: 5px;
+
+    .fa {
+      font-size: 8px;
+      position: relative;
+      top: -1px;
+      width: auto;
+    }
+
+    a {
+      padding: 8px;
+      display: flex;
+      margin-left: 15px;
+      margin-bottom: 5px;
+      width: 95%;
+    }
+
+    .sub-label {
+      padding-left: 5px;
+      float: left;
+    }
+
+    a.active {
+      color: #fff !important;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+    }
+  }
+}
