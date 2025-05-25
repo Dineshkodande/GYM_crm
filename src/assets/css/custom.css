@@ -1,0 +1,6 @@
+.logo{
+    width: 100px;
+    float: left;
+    /* background-image:url("../images/logo.png"); */
+    background-size: contain;
+}

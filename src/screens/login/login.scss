@@ -1,0 +1,70 @@
+.login-container{
+.login-logo {
+  background: var(--main-background);
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  .log-img {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  .log-logo {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  .logo-text {
+    color: #fff;
+    padding: 20px 20px 5px;
+    font-weight: 600;
+  }
+  .text-logo{
+    color: #f6f6f6;
+    font-size: 44px;
+    width: 100%;
+    float: left;
+    text-align: center;    text-shadow: 1px 4px #bababa;
+  }
+}
+
+.login-content {
+  background: var(--main-body);
+  width: 400px !important;
+  padding: 20px;
+  height: 100vh;
+  align-items: center;
+  place-content: center;
+  font-size: 14px;
+
+  .form-label {
+    font-size: 14px;
+    margin: 0;
+    color: var(--dark-grey-color);
+  }
+}
+
+.logo-2 {
+  width: 300px;
+}
+
+.panel-log{
+  input, input[type=email]{
+    background: var(--secondary-color) !important;padding: 0;color: #fff !important;
+ 
+  }
+  svg{fill:var(--dark-grey-color)}
+}
+}
+@media screen and (min-width: 300px) and (max-width: 576px) {
+.login-logo {
+  height: auto;padding: 0 20px;
+}
+.login-content {width: 100%;height: 50%;}
+}
+
+@media screen and (min-width: 641px) and (max-width:768px) {
+  .login-content {width: 100%;height: 50%;}
+  }

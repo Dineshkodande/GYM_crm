@@ -1,0 +1,9 @@
+.dashboard-view{
+  float: left;
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  .card{
+    flex-direction: row;
+  }
+}
